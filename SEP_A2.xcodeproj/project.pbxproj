@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		408D817B18BAD73C0083F7FF /* solutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 408D817A18BAD73C0083F7FF /* solutionViewController.m */; };
 		40958B9F18BA723F00B89D6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40958B9E18BA723F00B89D6F /* Foundation.framework */; };
 		40958BA118BA723F00B89D6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40958BA018BA723F00B89D6F /* CoreGraphics.framework */; };
 		40958BA318BA723F00B89D6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40958BA218BA723F00B89D6F /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		40958BC018BA723F00B89D6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40958BA218BA723F00B89D6F /* UIKit.framework */; };
 		40958BC818BA723F00B89D6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40958BC618BA723F00B89D6F /* InfoPlist.strings */; };
 		40958BCA18BA723F00B89D6F /* SEP_A2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40958BC918BA723F00B89D6F /* SEP_A2Tests.m */; };
+		40958BD718BA96F500B89D6F /* inputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40958BD618BA96F500B89D6F /* inputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		408D817918BAD73C0083F7FF /* solutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = solutionViewController.h; path = ../solutionViewController.h; sourceTree = "<group>"; };
+		408D817A18BAD73C0083F7FF /* solutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = solutionViewController.m; path = ../solutionViewController.m; sourceTree = "<group>"; };
 		40958B9B18BA723F00B89D6F /* SEP_A2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEP_A2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40958B9E18BA723F00B89D6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40958BA018BA723F00B89D6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		40958BC518BA723F00B89D6F /* SEP_A2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SEP_A2Tests-Info.plist"; sourceTree = "<group>"; };
 		40958BC718BA723F00B89D6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40958BC918BA723F00B89D6F /* SEP_A2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEP_A2Tests.m; sourceTree = "<group>"; };
+		40958BD518BA96F500B89D6F /* inputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inputViewController.h; path = ../inputViewController.h; sourceTree = "<group>"; };
+		40958BD618BA96F500B89D6F /* inputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = inputViewController.m; path = ../inputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 		40958BA418BA723F00B89D6F /* SEP_A2 */ = {
 			isa = PBXGroup;
 			children = (
+				40958BD518BA96F500B89D6F /* inputViewController.h */,
+				40958BD618BA96F500B89D6F /* inputViewController.m */,
+				408D817918BAD73C0083F7FF /* solutionViewController.h */,
+				408D817A18BAD73C0083F7FF /* solutionViewController.m */,
 				40958BAD18BA723F00B89D6F /* AppDelegate.h */,
 				40958BAE18BA723F00B89D6F /* AppDelegate.m */,
 				40958BB018BA723F00B89D6F /* Main.storyboard */,
@@ -249,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408D817B18BAD73C0083F7FF /* solutionViewController.m in Sources */,
 				40958BB518BA723F00B89D6F /* ViewController.m in Sources */,
 				40958BAF18BA723F00B89D6F /* AppDelegate.m in Sources */,
 				40958BAB18BA723F00B89D6F /* main.m in Sources */,
+				40958BD718BA96F500B89D6F /* inputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +472,7 @@
 				40958BCF18BA723F00B89D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40958BD018BA723F00B89D6F /* Build configuration list for PBXNativeTarget "SEP_A2Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				40958BD218BA723F00B89D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
