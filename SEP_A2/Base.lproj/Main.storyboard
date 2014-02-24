@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A524d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5FR-Xo-UcS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A524d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Lz4-FR-NFV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="3zG-Vm-btV">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="5FR-Xo-UcS" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tMi-Eb-Rfi">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="6JI-M9-Xcz" kind="relationship" relationship="rootViewController" id="ZIR-w9-ZTL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7F-7m-Sdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7" y="-334"/>
-        </scene>
-        <!--Solution View Controller - Title-->
+        <!--Solution View Controller - Solution-->
         <scene sceneID="bj3-F4-zy4">
             <objects>
-                <viewController id="KUy-ZT-e8I" customClass="solutionViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="solution" id="KUy-ZT-e8I" customClass="solutionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gso-cB-SpL"/>
                         <viewControllerLayoutGuide type="bottom" id="ROT-NQ-DNx"/>
@@ -47,19 +32,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="skL-W9-e87"/>
+                    <navigationItem key="navigationItem" title="Solution" id="skL-W9-e87"/>
                     <connections>
+                        <outlet property="titile" destination="skL-W9-e87" id="i0Y-wg-MxL"/>
                         <outlet property="type" destination="E9y-gR-7wP" id="yeN-lF-xGJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZe-iN-hXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992" y="-325"/>
+            <point key="canvasLocation" x="1518" y="-325"/>
         </scene>
         <!--Input View Controller - The Triangle Program-->
         <scene sceneID="ehn-8W-23i">
             <objects>
-                <viewController id="6JI-M9-Xcz" customClass="inputViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="input" id="6JI-M9-Xcz" customClass="inputViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sia-So-jti"/>
                         <viewControllerLayoutGuide type="bottom" id="KRf-kR-gRg"/>
@@ -112,6 +98,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onSubmit:" destination="6JI-M9-Xcz" eventType="touchUpInside" id="ZwU-ep-RyQ"/>
+                                    <segue destination="KUy-ZT-e8I" kind="push" identifier="submit" id="Mia-6Y-Zf3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,13 +108,31 @@
                     <navigationItem key="navigationItem" title="The Triangle Program" id="uFF-OJ-Cal"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="submit" destination="28N-Ol-oLg" id="rFd-nM-S2g"/>
                         <outlet property="valueA" destination="3K0-9N-Tsu" id="jYB-0h-Vs1"/>
                         <outlet property="valueB" destination="Bj3-wI-rLc" id="hc1-LD-JCG"/>
                         <outlet property="valueC" destination="fgM-ru-8so" id="TEq-wC-e6d"/>
-                        <segue destination="KUy-ZT-e8I" kind="push" identifier="submit" id="OHu-b9-72n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gbv-lo-ryZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992" y="-325"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Yh-s3-c7X">
+            <objects>
+                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" id="Lz4-FR-NFV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gqr-kq-lu6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6JI-M9-Xcz" kind="relationship" relationship="rootViewController" id="gQy-ZB-PIJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RB0-NV-DYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="466" y="-325"/>
         </scene>

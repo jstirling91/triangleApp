@@ -12,6 +12,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *valueA;
 @property (weak, nonatomic) IBOutlet UITextField *valueB;
 @property (weak, nonatomic) IBOutlet UITextField *valueC;
+@property (strong, nonatomic) UIAlertView *alert;
+@property (weak, nonatomic) IBOutlet UIButton *submit;
+@property (nonatomic, strong) id mockNavigationController;
 - (IBAction)onSubmit:(id)sender;
 
 @end

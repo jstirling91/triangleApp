@@ -48,40 +48,40 @@ int valC;
 
 - (IBAction)onSubmit:(id)sender {
     if([_valueA.text  isEqual: @""] || [_valueB.text  isEqual: @""] || [_valueB.text  isEqual: @""]){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+        _alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:@"You must select a value for each variable"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
-        [alert show];
+        [_alert show];
     }
     else{
         valA = [[_valueA text] intValue];
         valB = [[_valueB text] intValue];
         valC = [[_valueC text] intValue];
         if (valA < 1 || valB < 1 || valC < 1){
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+            _alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                             message:@"You must select values between 1 and 100 inclusive"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
-            [alert show];
+            [_alert show];
         }
         else if(valA > 100 || valB > 100 || valC > 100){
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+            _alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                             message:@"You must select values between 1 and 100 inclusive"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
-            [alert show];
+            [_alert show];
         }
-        else if(valA > valB + valC || valB > valA + valC || valC > valA + valB){
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+        else if(valA >= valB + valC || valB >= valA + valC || valC >= valA + valB){
+            _alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                             message:@"The input values do not form a triangle"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
-            [alert show];
+            [_alert show];
         }
         else{
             [self performSegueWithIdentifier:@"submit" sender:self];
@@ -103,4 +103,6 @@ int valC;
         }
     }
 }
+
+
 @end

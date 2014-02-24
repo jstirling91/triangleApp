@@ -11,6 +11,7 @@
 @interface solutionViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *type;
 @property (weak, nonatomic) NSString *typeOf;
+@property (weak, nonatomic) IBOutlet UINavigationItem *titile;
 
 + (void)setTypeOf:(NSString *)typeOf;
 @end

@@ -56,7 +56,7 @@
 		40958BBD18BA723F00B89D6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		40958BC518BA723F00B89D6F /* SEP_A2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SEP_A2Tests-Info.plist"; sourceTree = "<group>"; };
 		40958BC718BA723F00B89D6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		40958BC918BA723F00B89D6F /* SEP_A2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEP_A2Tests.m; sourceTree = "<group>"; };
+		40958BC918BA723F00B89D6F /* SEP_A2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SEP_A2Tests.m; path = SEP_A2Tests/SEP_A2Tests.m; sourceTree = SOURCE_ROOT; };
 		40958BD518BA96F500B89D6F /* inputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inputViewController.h; path = ../inputViewController.h; sourceTree = "<group>"; };
 		40958BD618BA96F500B89D6F /* inputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = inputViewController.m; path = ../inputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
